@@ -79,8 +79,8 @@ stages:
                 kubernetesCluster: 'tailspinspacegame-21915'
                 namespace: 'default'
                 manifests: |
-                  $(Pipeline.Workspace)/mainifests/deployment.yml
-                  $(Pipeline.Workspace)/mainifests/service.yml
+                  $(Pipeline.Workspace)/manifests/deployment.yml
+                  $(Pipeline.Workspace)/manifests/service.yml
                 imagePullSecrets: |
                   $(imagePullSecret)
                 containers: |
